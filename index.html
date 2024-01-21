@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نگین رز پاژ</title>
+    <title>هتل صدف مشهد</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/app.css">
     <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/carousel.css">
+    <link rel="stylesheet" href="./style/map.css">
+    <link rel="stylesheet" href="./style/apibox.css">
+    <link rel="stylesheet" href="./date/kamadatepicker.min.css">
 </head>
 <body>
     <div id="myimg" class="site-top">
@@ -24,7 +29,7 @@
                         <a class="nav-link" href="#">امکانات</a>
                     </div>
                     <div class="nav-item navbar-link links marrg">
-                        <a class="nav-link" href="#">خدمات</a>
+                        <a class="nav-link" href="#">رزرو انلاین</a>
                     </div>
                     <div class="nav-item navbar-link links marrg">
                         <a class="nav-link" href="#">پیشنهادات ویژه</a>
@@ -55,9 +60,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                           </svg>                      
                         <a href="./login-form/index.html" class="signin_link">ورود | ثبت نام</a>                    
-                    </div>
-                    <div class="nav-btn basket">                      
-                        <a href="#" class="signin_link">پیگیری خرید</a>                    
                     </div>
                     <div class="language-element">
                         <button onclick="myFunction()" class="language-btn"></button>
@@ -140,9 +142,173 @@
             <img src="./img/shrine.jpg" alt="">
         </div>
     </div>
+    <div class="options-body container-fluid">
+        <div class="options">
+            <div class="option active" style="background-image: url('./img/Untitled-1.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                <div class="icon">
+                    <i class='bx bx-restaurant'></i>
+                </div>
+                <div class="info">
+                    <div class="main">رستوران ها</div>
+                    <div class="sub">هتل صدف مشهد</div>
+                </div>
+                </div>
+            </div>
+            <div class="option" style="background-image: url('./img/cofe.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class='bx bx-coffee' ></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">کافی شاپ ها</div>
+                        <div class="sub">هتل صدف مشهد</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="background-image: url('./img/lobby.jpg');;">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class='bx bx-wifi'></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">لابی هتل</div>
+                        <div class="sub">هتل صدف مشهد</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="background-image: url('./img/room.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                <div class="icon">
+                    <i class='bx bx-bed'></i>
+                </div>
+                <div class="info">
+                    <div class="main">اتاق ها</div>
+                    <div class="sub">هتل صدف مشهد</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="onlineRes">
+        <div class="container-fluid apibox">
+            <div class="api-inp">
+                <img class="mylogo" src="./img/logo.png" alt="logo">
+                <div class="date-inp">
+                    <input type="text" name="datee" id="HoStrTime" class="datepick">
+                    <input type="text" name="datee" id="HoEndTime" class="datepickEnd">
+                </div>
+                <div class="number-of-pass-inp" onclick="HoShowSetNumber()">
+                    <span class="PassNumber" id="HoAdultNum"></span>
+                    <span class="PassNumber" id="HoKidNum"></span>
+                    <span class="PassNumber" id="HoChildNum"></span>
+                    <div id="HoSetNumber" class="set-number">
+                        <div class="single-row">
+                            <span class="age-row-title">بزرگسال<span class="age-discrib">(بزرگتر از 12 سال)</span></span>
+                            <button class="plus" onclick="HoIncrease('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="HoAdult"></span>
+                            <button class="minus" onclick="HoDecrese('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">کودک<span class="age-discrib">(بین 2 الی 12 سال)</span></span>
+                            <button style="margin-right: 6.5px;" class="plus" onclick="HoIncrease('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="HoKid"></span>
+                            <button class="minus" onclick="HoDecrese('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">نوزاد<span class="age-discrib">(کمتر از 2 سال)</span></span>
+                            <button style="margin-right: 29.5px;" class="plus" onclick="HoIncrease('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="HoChild"></span>
+                            <button class="minus" onclick="HoDecrese('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <button class="age-submit">تایید</button>
+                    </div>
+                </div>
+                <button class="submit-search">رزرو</button>
+            </div>
+        </div>
+    </div>
+    <div class="map container-fluid">
+        <iframe class="mymap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d675.9525253292547!2d59.62036240257253!3d36.30284320225684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f6c90e5ed8086eb%3A0xc0cc4158bf1b7c28!2sSadaf%20Hotel!5e0!3m2!1sen!2s!4v1705841017044!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        <div class="map-msgbox">
+            <div class="infobox">
+                <p><i style="color: #c12612;" class='bx bxs-phone bx-rotate-270' ></i>051 3225 5935</p>
+                <p><i style="color: #c12612;" class='bx bxs-map'></i>مشهد، میدان راه آهن، روبروی هاشمی نژاد۲۹</p>
+            </div>
+            <div class="msg-inputs">
+                <input type="text" name="fullName" id="fullName" placeholder="نام و نام خانوادگی">
+                <div class="top2-inputs">
+                    <input type="text" name="mail" id="mailpInp" placeholder="ایمیل">
+                    <select name="role" id="Role">
+                        <option value="manager">مدیریت</option>
+                    </select>
+                </div>
+                <div class="msg-twxt">
+                    <textarea name="msgtext" id="msgText" cols="69" rows="8"></textarea>
+                </div>
+            </div>
+            <button class="msgSub">ارسال پیام</button>
+        </div>   
+    </div>
 </body>
-
+<script src="./js/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/navbar.js"></script>
+<script src="./js/carosel.js"></script>
+<script src="./js/apibox.js"></script>
+<script src="./date/kamadatepicker.min.js"></script>
+<script>
+    let opt = {
+        placeholder : "تاریخ ورود",
+        forceFarsiDigits : true,
+        markHolidays : true,
+        markToday : true,
+        gotoToday : true,
+    }
+    let opt2 = {
+        placeholder : "تاریخ خروج",
+        forceFarsiDigits : true,
+        markHolidays : true,
+        markToday : true,
+        gotoToday : true,
+    }
+    kamaDatepicker('AirStrTime',opt);
+    kamaDatepicker('TrStrTime',opt);
+    kamaDatepicker('FlyStrTime',opt);
+    kamaDatepicker('HoStrTime',opt);
+    kamaDatepicker('BusStrTime',opt);
+    kamaDatepicker('AirEndTime',opt2);
+    kamaDatepicker('TrEndTime',opt2);
+    kamaDatepicker('FlyEndTime',opt2);
+    kamaDatepicker('HoEndTime',opt2);
+</script>
 </html>

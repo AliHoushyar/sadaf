@@ -1,0 +1,62 @@
+.map{
+    position: relative;
+}
+
+.map-msgbox{
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    z-index: 1;
+    background-color: white;
+    padding: 15px;
+    -webkit-box-shadow: 10px 10px 45px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 45px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 45px -12px rgba(0,0,0,0.75);
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.mymap{
+    width: 100%;
+    height: 100vh;
+}
+
+#fullName{
+    width: 100%;
+    height: 40px;
+}
+
+.top2-inputs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#mailpInp{
+    width: 100%;
+    height: 40px;
+}
+
+#Role{
+    width: 100%;
+    height: 40px;
+}
+
+#msgText{
+    margin-top: 20px;
+}
+
+.msgSub{
+    border: none;
+    margin-top: 20px;
+    margin-right: 40%;
+    text-decoration: none;
+    color: white;
+    background-color: #c12612;
+    height: 40px;
+    border-radius: 15px;
+    width: 100px;
+}

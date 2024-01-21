@@ -82,3 +82,12 @@
     -moz-box-shadow: 10px 10px 30px -9px rgba(112,112,112,1);
     box-shadow: 10px 10px 30px -9px rgba(112,112,112,1);
 }
+
+@media screen and (max-width: 500px) {
+    .about{
+        flex-direction: column;
+    }
+    .about-img{
+        width: 100%;
+    }
+}
