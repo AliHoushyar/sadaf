@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/login.css">
+    <title>هتل صدف مشهد</title>
+</head>
+<body>
+    <div class="cotn_principal">
+        <div class="cont_centrar">
+            <div class="cont_login">
+                <div class="cont_info_log_sign_up">
+                    <div class="col_md_login">
+                        <div class="cont_ba_opcitiy">
+                            <h2>ورود</h2>  
+                            <p>در صورت داشتن حساب کاربری از اینجا وارد حساب کاربری خود شوید</p> 
+                            <button class="btn_login" onclick="change_to_login()">ورود</button>
+                        </div>
+                    </div>
+                    <div class="col_md_sign_up">
+                        <div class="cont_ba_opcitiy">
+                            <h2>ثبت نام</h2>
+                            <p>در صورت نداشتن حساب کاربری از اینجا حساب کاربری جدید خود را بسازید</p> 
+                            <button class="btn_sign_up" onclick="change_to_sign_up()">ثبت نام</button>
+                        </div>
+                    </div>
+                </div>
+        
+            
+                <div class="cont_back_info">
+                    <div class="cont_img_back_grey">
+                        <img src="./img/login.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="cont_forms" >
+                    <div class="cont_img_back_">
+                        <img src="./img/login.jpg" alt="" />
+                    </div>
+                    <div class="cont_form_login">
+                        <a href="#" onclick="hidden_login_and_sign_up()" ><i style="font-size: 40px;" class='bx bx-left-arrow-alt'></i></a>
+                        <h2>ورود</h2>
+                        <input type="text" placeholder="ایمیل" />
+                        <input type="password" placeholder="رمز عبور" />
+                        <button class="btn_login" onclick="change_to_login()">ورود</button>
+                    </div>
+                    <div class="cont_form_sign_up">
+                        <a href="#" onclick="hidden_login_and_sign_up()"><i style="font-size: 40px;" class='bx bx-left-arrow-alt'></i></a>
+                        <h2>ثبت نام</h2>
+                        <input type="text" placeholder="ایمیل" />
+                        <input type="text" placeholder="نام کاربری" />
+                        <input type="password" placeholder="رمز عبور" />
+                        <input type="password" placeholder="تکرار رمز عبور" />
+                        <button class="btn_sign_up" onclick="change_to_sign_up()">ثبت نام</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+</body>
+<script src="./js/main.js"></script>
+</html>

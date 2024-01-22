@@ -324,3 +324,10 @@
     height: 1px;
     margin-top: 10px;
 }
+
+.spannav{
+    cursor: pointer;    
+}
+.spannav:hover{
+    color: white;
+}

@@ -14,14 +14,55 @@
 
 body{
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .main-container{
     width: 85%;
 }
 
+.footer{
+  background: #ae2311;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#ff8e80;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
+
+.footlink a{
+    text-decoration: none;
+}
+
+.footerSpan{
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.footerSpan:hover{
+    color: #ff8e80;
+}
 
 @media screen and (max-width: 1000px) {
     .main-container{

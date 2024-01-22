@@ -20,16 +20,16 @@
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="nav-item navbar-link links marrg">
-                        <a class="nav-link" href="#">صفحه اصلی</a>
+                        <a class="nav-link" href="./index.html">صفحه اصلی</a>
                     </div>
                     <div class="nav-item navbar-link links marrg">
-                        <a class="nav-link" href="#">معرفی هتل</a>
+                        <span class="nav-link spannav" onclick="scrolltoabout()">معرفی هتل</span>
                     </div>
                     <div class="nav-item navbar-link links marrg">
-                        <a class="nav-link" href="#">امکانات</a>
+                        <span class="nav-link spannav" onclick="scrolltoOpp()">امکانات</span>
                     </div>
                     <div class="nav-item navbar-link links marrg">
-                        <a class="nav-link" href="#">رزرو انلاین</a>
+                        <span class="nav-link spannav" onclick="scrolltoRes()">رزرو انلاین</span>
                     </div>
                     <div class="nav-item navbar-link links marrg">
                         <a class="nav-link" href="#">پیشنهادات ویژه</a>
@@ -59,7 +59,7 @@
                         <svg class="login_icon"xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: 20px;color: #c12612" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                           </svg>                      
-                        <a href="./login-form/index.html" class="signin_link">ورود | ثبت نام</a>                    
+                        <a href="./loginpage/login.html" class="signin_link">ورود | ثبت نام</a>                    
                     </div>
                     <div class="language-element">
                         <button onclick="myFunction()" class="language-btn"></button>
@@ -87,7 +87,7 @@
         <div class="divider">
         </div>
     </div>
-    <div class="about container-fluid">
+    <div id="About" class="about container-fluid">
         <div class="about-text">
             <img class="text-photo" width="175px" height="175px" src="./img/2star.png" alt="stars">
             <h2 style="text-align: center; color: #ff4a4a;font-weight: bold;">هتل صدف</h2>
@@ -142,7 +142,7 @@
             <img src="./img/shrine.jpg" alt="">
         </div>
     </div>
-    <div class="options-body container-fluid">
+    <div id="Options" class="options-body container-fluid">
         <div class="options">
             <div class="option active" style="background-image: url('./img/Untitled-1.jpg');">
                 <div class="shadow"></div>
@@ -194,7 +194,7 @@
             </div>
         </div>
     </div>
-    <div class="onlineRes">
+    <div id="Res" class="onlineRes">
         <div class="container-fluid apibox">
             <div class="api-inp">
                 <img class="mylogo" src="./img/logo.png" alt="logo">
@@ -277,6 +277,38 @@
             </div>
             <button class="msgSub">ارسال پیام</button>
         </div>   
+    </div>
+    <div class="pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12 about-company">
+              <h2>هتل صدف</h2>
+              <p class="pr-5 text-white-50">هتل صدف مشهد در سال ۱۳۷۰ افتتاح و آخرین بازسازی مجموعه در سال ۱۴۰۱ انجام گردیده است. این مجموعه در ۲ طبقه و ۶۲ واحد اقامتی با پرسنلی مجرب و آموزش دیده آماده خدمت رسانی به شما میهمانان عزیز می‌باشد.</p>
+              <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">دسترسی سریع</h4>
+                <ul class="m-0 p-0 footlink">
+                  <li>- <a href="./index.html">صفحه نخست</a></li>
+                  <li>- <span class="footerSpan" onclick="scrolltoabout()">معرفی هتل</span></li>
+                  <li>- <span class="footerSpan" onclick="scrolltoOpp()">امکانات هتل</span></li>
+                  <li>- <span class="footerSpan" onclick="scrolltoRes()">رزرو انلاین</span></li>
+                  <li>- <a href="#">ارتباط با ما</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4">آدرس : </h4>
+              <p>مشهد، میدان راه آهن، روبروی هاشمی نژاد۲۹</p>
+              <h4 class="mt-lg-0 mt-sm-4">تلفن تماس : </h4>
+              <p class="mb-0"><i class="fa fa-phone mr-3"></i>051 3225 5935</p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col copyright">
+              <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+            </div>
+          </div>
+        </div>
     </div>
 </body>
 <script src="./js/jquery.js"></script>
