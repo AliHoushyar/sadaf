@@ -1,0 +1,163 @@
+.topbar{
+    width: 100%;
+    background-color: white;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+}
+
+.searchBar i{
+    font-size: 30px;
+}
+
+.searchBar input{
+    height: 60px;
+    width: 100%;
+    font-size: 16px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.backbtn{
+    color: white;
+    background-color: #4b17a5;
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.clickable{
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.clickable:hover{
+    font-size: 35px;
+}
+
+.boxes-prop{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.PERtitle{
+  font-size: 14px;
+  color: rgb(92, 92, 92);
+}
+
+.PERsub{
+  font-size: 18px;
+}
+
+.boxes-info{
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+
+.boxes-btn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.boxes{
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.Btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100px;
+  height: 40px;
+  border: none;
+  padding: 0px 20px;
+  background-color: #8658c7;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #4b17a5;
+  transition-duration: .3s;
+}
+
+.svg {
+  width: 13px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  color: transparent;
+}
+
+.Btn:hover svg {
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: .3s;
+}
+
+.Btn:active {
+  transform: translate(3px , 3px);
+  transition-duration: .3s;
+  box-shadow: 2px 2px 0px rgb(122, 9, 9);
+}
+
+.res{
+    position: absolute;
+    right: 40%;
+    top: 40%;
+}
+
+.pageBtn{
+    background-color: #4b17a5;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.pageButtens{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 20px auto;
+    width: 90%;
+    justify-content: center;
+}
+
+.active{
+    background-color: #8658c7;
+}
