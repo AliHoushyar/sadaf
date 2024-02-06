@@ -45,7 +45,7 @@
 .navbar{
     height: 90px;
     display: flex;
-    /* background-color: rgba(0, 0, 0, 0.096); */
+    /* background-color: rgba(0, 0, 0, 0.374); */
     display: flex;
     align-items: center;
     position: relative;
@@ -115,12 +115,12 @@
 
 .dropdown-title{
     transition: all 250ms ease-in-out;
-    color: #c12612;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .nav-link{
-    color: #c12612;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -240,7 +240,7 @@
     font-size: 14px;
     height: 35px;
     gap: 5px;
-    border: 2px solid #9f111151;
+    border: 2px solid #c1c1c151;
     border-radius: 8px;
     padding: 5px;
     transition: all 250ms ease-in;
@@ -254,7 +254,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    border: 2px solid #9f111151;
+    border: 2px solid #e0e0e051;
     border-radius: 8px;
     padding: 5px;
     transition: all 250ms ease-in;
@@ -313,16 +313,17 @@
 }
 
 .signin_link{
-    color: #c12612;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .divider{
-    background: rgb(143,29,29);
-    background: linear-gradient(90deg, rgba(143,29,29,0) 0%, rgba(255,0,0,0.499124649859944) 34%, rgba(255,0,0,1) 50%, rgba(255,0,0,0.4963235294117647) 66%, rgba(255,0,0,0) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(143,29,29,0) 0%, rgba(255, 255, 255, 0.499) 34%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.496) 66%, rgba(255,0,0,0) 100%);
     width: 100%;
-    height: 1px;
+    height: 2px;
     margin-top: 10px;
+    border-radius: 50%;
 }
 
 .spannav{

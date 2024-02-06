@@ -8,7 +8,7 @@ function showSlides(n) {
         n=n%2 + 1;
     switch (n){
         case 1:
-            imgb.style.backgroundImage = "url(./img/plain2.jpg)";
+            imgb.style.backgroundImage = "url(./img/hotel/main.jpg)";
             document.getElementById('airplain-btn').src = "./icons/plain-logo-2.png";
             break;
         case 2:
