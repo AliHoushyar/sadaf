@@ -1,12 +1,13 @@
 .map{
     position: relative;
+    height: 100vh;
 }
 
 .map-msgbox{
     height: 500px;
     width: 600px;
     position: absolute;
-    top: 100px;
+    top: 60px;
     left: 80px;
     z-index: 1;
     background-color: white;
@@ -59,4 +60,36 @@
     height: 40px;
     border-radius: 15px;
     width: 100px;
+}
+
+.msg-twxt textarea{
+    width: 100%;
+    height: 130px;
+}
+
+.mymap2{
+    width: 100%;
+    height: 400px;
+}
+
+@media screen and (max-width: 638px) {
+    .map-msgbox{
+        width: 85%;
+        left: 30px;
+    }
+    .mymap {
+      display: none;
+    }
+    .top2-inputs{
+        flex-direction: column;
+    }
+    .msgSub{
+        margin-right: 33%;
+    }
+}
+
+@media screen and (min-width: 638px) {
+    .mymap2{
+        display: none;
+    }
 }

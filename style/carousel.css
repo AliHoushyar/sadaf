@@ -176,3 +176,97 @@
 .options .option .label .info .sub {
     /* transition-delay: 0.1s; */
 }
+@media screen and (max-width: 638px) {
+    .options {
+      display: none;
+    }
+}
+/*------------------------------------------------------------------------------------*/
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FGA{
+    display: flex;
+    gap: 5px;
+}
+
+.gallery_card {
+    width: 170px;
+    height: min-content;
+    transition: all .3s;
+    position: relative;
+    box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.right_card{
+    border-radius: .5rem 2rem;
+}
+
+.left_card{
+    border-radius: 2rem .5rem;
+}
+
+.gallery_card:hover {
+    transform: scale(1.03);
+}
+
+.gallery_img {
+    transition: all .3s;
+    width: 100%;
+}
+
+.cofe_card{
+    background-image: url(../img/hotel/cofecard.jpg);
+}
+
+.rest_card{
+    background-image: url(../img/hotel/restcard.jpg);
+}
+
+.loby_card{
+    background-image: url(../img/hotel/lobycard.jpg);
+}
+
+.room_card{
+    background-image: url(../img/hotel/roomcard.jpg);
+}
+
+.gallery_img-container {
+    display: grid;
+    /* border-radius: .5rem 2rem; */
+    height: 270px;
+    overflow: hidden;
+}
+
+.gallery_card_description {
+  position: absolute;
+  bottom: .5rem;
+  left: .5rem;
+  text-align: start;
+  padding: .5rem 1em;
+  width: 90%;
+  transition: all 0.5s ease;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  backdrop-filter: blur(.1rem);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: .5rem 2rem;
+}
+
+.gallery_card_description:hover {
+    transform: perspective(100px) translateX(7px) rotateX(3deg) rotateY(3deg) scale(1);
+    box-shadow: none;
+}
+
+.gallery_card_title {
+    color: aliceblue;
+}
+@media screen and (min-width: 638px) {
+    .gallery {
+      display: none;
+    }
+}

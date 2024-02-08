@@ -19,7 +19,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .nav-btn-stay a{
         font-size: 10px;
     }
@@ -28,6 +28,19 @@
     }
     .navbar-btns{
         margin-right: 0px;
+    }
+    .site-top{
+        background-image: url(../img/ssss.jpg) !important;
+    }
+    .navbar{
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(6.2px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .divider{
+        display: none;
     }
 }
 
@@ -41,6 +54,7 @@
     height: 100vh;
     background-size: cover;
     transition: all 250ms ease-in-out;
+    background-image: url(../img/hotel/main.jpg);
 }
 .navbar{
     height: 90px;
